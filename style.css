@@ -1,0 +1,167 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #e0d8c9; /* Light beige background color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box-shadow on hover */
+}
+
+h1 {
+    color: #1f5673; /* Dark blue color for h1 */
+    margin-bottom: 10px;
+    animation: slideDown 1s ease-in-out;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+button, h2, label {
+    animation: slideDown 1s ease-in-out;
+}
+
+button {
+    background-color: #b14594; /* Purple color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+}
+
+button:hover {
+    background-color: #92278f; /* Darker purple on hover */
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #b14594; /* Purple border for input */
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 5px;
+    font-weight: bold;
+    color: #b14594; /* Purple color for label */
+}
+
+h2 {
+    color: #1f5673; /* Dark blue color for h2 */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+h2:hover {
+    color: #143c55; /* Darker blue on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Additional styles for moodHistory and moodList */
+#moodHistory {
+    margin-top: 20px;
+}
+
+#moodHistory h2 {
+    font-size: 20px;
+    color: #1f5673; /* Dark blue color for h2 */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+#moodList {
+    padding: 0;
+}
+
+#moodList li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b14594; /* Purple color for moodList background */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+
+    /* Animation for each mood item */
+    animation: flyIn 1s ease-in-out, moveAround 3s infinite linear;
+}
+
+#moodList li:hover {
+    background-color: #92278f; /* Darker purple on hover */
+}
+
+/* Keyframes for flyIn animation */
+@keyframes flyIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for moveAround animation */
+@keyframes moveAround {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+/* Keyframes for slideDown animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for slideUp animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

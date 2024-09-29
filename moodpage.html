@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mood Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Page</h1>
+        <p>This is your mood tracking page.</p>
+        <div id="moodTracker">
+            <h2>Mood Tracker</h2>
+            <label for="currentMood">Current Mood:</label>
+            <input type="text" id="currentMood" placeholder="Enter your mood">
+            <button onclick="storeMood()">Store Mood</button>
+        </div>
+        
+        <div id="moodHistory">
+            <h2>Mood History</h2>
+            <ul id="moodList">
+                <!-- Example entries with emojis -->
+                <li>😊 Happy</li>
+                <li>😢 Sad</li>
+                <li>😎 Cool</li>
+                <!-- Add more list items with corresponding emojis as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

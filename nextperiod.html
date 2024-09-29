@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Next Period Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Next Period Prediction</h1>
+        <p>This is the page for predicting the next period.</p>
+        <div id="cycleInput">
+            <h2>Enter Your Menstrual Cycle Length</h2>
+            <label for="cycleLength">Cycle Length (in days):</label>
+            <input type="number" id="cycleLength" min="1" required>
+            <button onclick="updateNextPeriod()">Update Next Period Date</button>
+        </div>
+
+        <div id="futurePeriodInfo">
+            <!-- This will be updated dynamically -->
+        </div>
+    
+        <div id="cycleInput">
+            <h2>Enter Your Period Length</h2>
+            <label for="cycleLength">Period Length (in days):</label>
+            <input type="number" id="cycleLength" min="1" required>
+            <button onclick="calculateOvulation()">Calculate Ovulation Date</button>
+        </div>
+
+        <div id="ovulationInfo">
+            <!-- This will be updated dynamically -->
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Virtual Guardian</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Guardian</h1>
+    
+        <div>
+            <p id="adviceDisplay"></p>
+            <button onclick="getAdvice()">Today's THOUGHT</button>
+            
+        </div>
+        <div>
+            <button onclick="redirectNextPeriod()">Predict Next Period</button>
+        </div>
+
+    
+        <div id="scenarioDropdown">
+            <button onclick="redirectToScenario()">Medical Advice</button>
+            <select id="scenarios" onchange="redirectToScenario()">
+                <option value="" selected disabled>Select Scenario</option>
+                <option value="low_flow_rate.html">Low Flow Rate Scenario</option>
+                <option value="high_flow_rate.html">High Flow Rate Scenario</option>
+                <option value="heavy_stomach_pain.html">Heavy Stomach Pain Scenario</option>
+                <option value="irregular_periods.html">Irregular Periods Scenario</option>
+            </select>
+        </div>
+        
+
+        <div id="periodTracker">
+           
+            <button onclick="redirectToMoodPage()">Track Your Mood</button>
+        
+
+        <div id="healthyFoods">
+            
+            <button onclick="redirectToFood()">BalanceBowl</button>
+            <p id="healthyFoodsList"></p>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

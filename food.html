@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f6f6f6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #1f5673;
+            margin-bottom: 10px;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+            animation: slideDown 1s ease-in-out; /* Slide down animation for each <p> */
+        }
+
+        a {
+            color: #92278f;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #b14594;
+        }
+
+        /* Keyframes for slideDown animation */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Additional styling for the textbox */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        input[type="text"]:focus {
+            border-color: #92278f;
+        }
+    </style>
+    <title>Low Flow Rate Scenario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>TO EAT LIST</h1>
+        <div color="red">
+        <p>Water. Drinking a lot of water is always important, and this is especially true during your period</p>
+        <p>Fruit. Water-rich fruits, such as watermelon and cucumber, are great for staying hydrated</p>
+        <p>Leafy green vegetables</p>
+        <p>Ginger</p>
+        <p>Chicken</p>
+        <p>Fish</p>
+        <p>Turmeric</p>
+        <p>Dark chocolate</p>
+</div>
+        <!-- Adding a simple textbox -->
+        <input type="text" placeholder="Add your own item">
+
+        <h1>To SKIP LIST</h1>
+        <p>Salty / High sodium foods.</p>
+        <p>Sweets / High sugar foods. </p>
+        <p>Caffeine / Tea / Coffee</p>
+        <p>Alcohols</p>
+        <p>Piquant and Spicy foods</p>
+        <p>Meat / Red Meat such as beef or pork</p>
+        <p><a href="index.html">Go back to Ovulation Calculator</a></p>
+    </div>
+</body>
+</html>
